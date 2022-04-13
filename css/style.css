@@ -16,6 +16,9 @@ li,
 a {
   font-family: "Montserrat", sans-serif;
 }
+h2{
+  font-size: 30px;
+}
 /****************** navbar starts *******************/
 
 .navbar {
@@ -241,7 +244,10 @@ a {
   font-size: 20px;
   color: #000000;
 }
-
+.header .details img{
+  width: 10px;
+  height: 10px;  
+}
 .header .image {
   width: 100%;
   height: 666px;
@@ -331,7 +337,7 @@ a {
 
 @media (max-width: 1700px) {
   .about {
-    gap: 30px;
+    gap: 40px;
     margin: 70px 100px;
   }
 
@@ -355,6 +361,24 @@ a {
   .about {
     margin: 70px 50px;
   }
+}
+
+  @media (max-width: 600px) 
+  {
+    .about {
+      margin: 50px 30px;
+      
+    }
+    .about  p{
+      font-size: 17px;
+      line-height: 20px;
+      text-align: center;
+     }
+}
+@media (max-width: 400px){
+.about h2{
+ font-size: 22px;
+}
 }
 /**************** about end *****************/
 
@@ -410,7 +434,7 @@ a {
   }
 
   .services h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .services .cards {
@@ -451,7 +475,7 @@ a {
     margin: 0px 120px;
   }
   .services .cards {
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -469,11 +493,13 @@ a {
 @media (max-width: 600px) {
   .services {
     margin: 0px 25px;
+  
   }
   .services .cards {
     justify-content: center;
     align-items: center;
     gap: 30px;
+   
   }
 }
 
@@ -582,7 +608,7 @@ a {
   }
 
   .commercial h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .commercial .items {
@@ -615,9 +641,7 @@ a {
     align-items:center;
     overflow-y: hidden;
    }
-   .commercial h2{
-     font-size: 20px;
-   }
+  
 }
 
 @media (max-width: 1200px) {
@@ -633,9 +657,9 @@ a {
   .commercial .items {
     gap: 30px;
   }
+ 
 }
-
-/***************** commercial end ****************/
+  /***************** commercial end ****************/
 
 .call-to-action {
   width: auto;
@@ -767,6 +791,9 @@ a {
   .scope .scopeElements {
     gap: 100px;
   }
+  .scope h2{
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -774,6 +801,17 @@ a {
     gap: 50px;
   }
 }
+@media (max-width:600px) {
+  .scope .scopeElements .element ul {
+    font-size: 8px;
+    /* text-align: center; */
+    overflow-y: hidden;
+    padding: 10px;
+  }
+  }
+
+
+
 
 /************* scope ends *****************/
 
@@ -828,7 +866,7 @@ a {
   }
 
   .keyHighlights h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .keyHighlights .keys {
@@ -860,6 +898,9 @@ a {
   .keyHighlights .keys {
     gap: 100px;
   }
+  .keyHighlights h2{
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -868,6 +909,9 @@ a {
   }
   .keyHighlights .keys {
     gap: 80px;
+  }
+  .keyHighlights h2{
+    font-size: 30px;
   }
 }
 
@@ -1116,7 +1160,7 @@ a {
 
   .footer .right-section .contact {
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     gap: 20px;
   }
@@ -1182,6 +1226,7 @@ a {
 }
 
 /* ****************end bar end***************** */
+
 .service {
   margin: 30px 90px;
   display: flex;
@@ -1190,34 +1235,30 @@ a {
   flex-direction: column;
   gap: 50px;
 }
-.service .cards {
+ .service h2 {
+  font-size: 30px;
+}
+ .service .cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
 }
-.service h2{
-      font-size: 40px;
-    text-align: center;
-  }
-
 .service .card {
   padding: 35px 20px;
   width: 369px;
   height: 980px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   gap: 30px;
   border: 2px solid #e3e3e3;
   border-radius: 10px;
 }
-
 .service .card h3 {
   font-size: 20px;
   overflow-y: hidden;
-  /* text-align: center; */
 }
 
 .service .card img {
@@ -1275,14 +1316,12 @@ a {
 
 @media (max-width: 1700px) {
   .service {
-    margin: 50px auto;
-    gap: 40px;
-   
+    margin: 10px 20px;
+    gap: 50px;
   }
 
-  .service h1 {
+  .service h2 {
     font-size: 30px;
-    text-align: center;
   }
 
   .service .cards {
@@ -1339,73 +1378,23 @@ a {
     text-decoration: line-through;
   }
 }
-
 @media (max-width: 1460px) {
-  .service {
-    margin: 30px auto;
-    gap: 50px;
-   
+  .services {
+    margin: 0px 90px;
   }
+
   .service .cards {
-   gap: 20px;
-   flex-wrap: wrap;
-  }
-  .service h1{
-        font-size: 22px;
-    }
-  
-  .service .card {
-    width: 250px;
-    height: 550px;
-    gap: 10px;
- 
-  }
-  .service .card h3{
-    font-size: 12px;
-  }
-  .service .card img {
-    width: 180px;
-    height: 150px;
-  }
-  
-  .service .card .table {
-     gap: 5px;
-
-  }
-  
-  .service .card .table h4 {
-    font-size: 12px;
-  }
-  
-  .service .card .table ul {
-    font-size: 10px;
-  }
-
-  .service .card .table table {
-    padding: 8px 0px 0px 8px;
-    font-size: 8px;
-  }
-
-  .table table thead th {
-    padding: 10px;
-    font-size: 8px;
-  }
-
-  .table table tr td {
-    padding: 8px 0;
-    font-size: 13px;
-  }
-
-  .table table tr .entry1 {
-    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
   }
 }
 
 @media (max-width: 1100px) {
   .service {
-    margin: 0px 120px;
+    margin: 100px 60px;
   }
-  .services .cards {
+  .service .cards {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -1413,8 +1402,7 @@ a {
 }
 @media (max-width: 800px) {
   .service {
-    margin: 0px 25px;
-    
+    margin: 100px 25px;
   }
   .service .cards {
     justify-content: center;
@@ -1426,21 +1414,26 @@ a {
 
 @media (max-width: 600px) {
   .service {
-    margin: 0px 25px;
+    margin: 100px 25px;
+  }
+  .service h2{
+    font-size: 25px;
   }
   .service .cards {
     justify-content: center;
     align-items: center;
     gap: 30px;
-
-  }
+    flex-wrap: wrap;
+   }
 }
-/***************** services end *************/
+
+
+/************* Service End *****************/
 
 
 .calls-to-action {
   width: 100%;
-  height: 100px;
+  height: auto;
   background: #191616 0% 0% no-repeat padding-box;
 border: 1px solid #707070;
 border-radius: 10px;
@@ -1505,6 +1498,36 @@ opacity: 1;
     width: 200px;
     height: 50px;
     font-size: 20px;
+  }
+}
+@media (max-width:800px) {
+ 
+ 
+  .calls-to-action p {
+    font-size: 15px;
+    color: #EFD236;
+  }
+
+  .calls-to-action button {
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+  }
+}
+@media (max-width:600px){
+  .calls-to-action{
+    flex-direction: column;
+    padding: 10px 10px;
+  }
+  .calls-to-action p {
+    font-size: 9px;
+    color: #EFD236;
+    padding: 5px;
+  }
+  .calls-to-action button {
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
   }
 }
 
