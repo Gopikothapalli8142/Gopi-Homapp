@@ -305,7 +305,7 @@ h2{
 @media (max-width: 400px) {
   .header {
     margin: 20px 20px;
-
+    
     gap: 10px;
   }
   .header .image {
@@ -1325,7 +1325,7 @@ h2{
   }
 
   .service .cards {
-    gap: 20px;
+    gap: 60px;
   }
 
   .service .card {
